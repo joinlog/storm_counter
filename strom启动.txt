@@ -1,0 +1,17 @@
+D:\zookeeper-3.4.13\bin\zkServer.cmd
+D:\apache-storm-1.2.2\bin\storm.py nimbus
+D:\apache-storm-1.2.2\bin\storm.py supervisor
+D:\apache-storm-1.2.2\bin\storm.py ui
+
+
+localhost:8080
+
+D:\apache-storm-1.2.2\bin\storm.py kill
+
+
+D:\apache-storm-1.2.2\examples\storm-starter>D:\apache-storm-1.2.2\bin\storm.py  jar target/storm-starter-1.2.2.jar org.apache.storm.starter.ExclamationTopology
+
+F:\eclipse-workspace\TopologyMain>mvn  package
+如果是本地模式，直接eclipse运行run as --> java application即可
+如果是集群模式运行如下命令，但是代码要修改成为在集群执行的模式，如下执行
+F:\eclipse-workspace\TopologyMain>D:\apache-storm-1.2.2\bin\storm.py  jar target\TopologyMain-0.0.1-SNAPSHOT.jar org.apache.storm.TopologyMain.App F:\issue\849\vmsalgo20181106_0000.log
